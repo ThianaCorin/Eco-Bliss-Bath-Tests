@@ -7,10 +7,9 @@ describe("Checks add a product button", () => {
         cy.get("[data-cy='login-input-username']").type('test2@test.fr')
         cy.get("[data-cy='login-input-password']").type('testtest')
         cy.get("[data-cy='login-submit']").click()
-        cy.url().should('not.include', '/login')
-        cy.visit('/#/products/3')
+        cy.get("[data-cy='product-home-link']").should('be.visible')
+        cy.get("[data-cy='product-home-link']").first().click()
         cy.get("[data-cy='detail-product-add']").should('be.visible')
-
-
     })
 })
+
