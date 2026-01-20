@@ -23,7 +23,7 @@ describe("Checks login process", () => {
         cy.url().should('include', '/#/login')
     })
 
-    it("should test XSS vulnerabilities", () => {
+    it("should not execute XSS script in login form", () => {
         cy.visit('/#/login')
         cy.get("[data-cy='login-input-username']").type('<script>alert("faille XSS");</script>')
         cy.get("[data-cy='login-input-password']").type('wrongpassword')

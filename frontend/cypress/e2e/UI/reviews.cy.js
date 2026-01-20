@@ -1,5 +1,5 @@
 describe("XSS protection on reviews", () => {
-    it("should test XSS vulnerabilities", () => {
+    it("should not execute XSS script in review comment", () => {
         cy.visit('/#/login')
         cy.get("[data-cy='login-input-username']").type('test2@test.fr')
         cy.get("[data-cy='login-input-password']").type('testtest')
