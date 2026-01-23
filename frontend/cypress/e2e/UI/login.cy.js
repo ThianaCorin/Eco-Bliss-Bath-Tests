@@ -21,6 +21,9 @@ describe("Checks login process", () => {
         cy.get("[data-cy='login-submit']").click()
         cy.get("[data-cy='login-errors']").should('exist')
         cy.url().should('include', '/#/login')
+        cy.should(() => {
+            expect(localStorage.getItem('user')).to.be.null
+        })
     })
 
     it("should not execute XSS script in login form", () => {
