@@ -1,6 +1,6 @@
 <div align="center">
 
-# OpenClassrooms - Eco-Bliss-Bath
+# Eco-Bliss-Bath
 
 </div>
 
@@ -12,6 +12,13 @@
     <img src="https://img.shields.io/badge/docker--build-passing-brightgreen">
   <br><br><br>
 </p>
+
+# Contexte 
+
+Eco Bliss Bath s’apprête à lancer la première version de son site e-commerce dédié à la vente de produits de beauté éco-responsables, dont le produit principal est un savon solide.
+
+Dans un contexte de mise en production prochaine et de contraintes budgétaires, une première campagne de tests manuels a été réalisée afin d’identifier les principaux risques fonctionnels et techniques.
+La présente campagne de tests automatisés s’inscrit dans la continuité de ce travail initial et vise à fournir un niveau de confiance suffisant pour éclairer la décision de mise en production.
 
 # Tests automatisés Cypress
 
