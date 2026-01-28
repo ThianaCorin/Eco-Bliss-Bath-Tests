@@ -97,11 +97,6 @@ Les résultats sont affichés dans la console.
 cypress/screenshots/
 ```
 
-**Des vidéos d'exécution peuvent également être générées dans :**
-```
-cypress/videos/
-```
-
 ---
 
 ## Auteur
